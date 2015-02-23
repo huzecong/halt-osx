@@ -1,0 +1,84 @@
+/* localize time single hour */
+" hour" = " hour";
+
+/* localize time plural hour */
+" hours" = " hours";
+
+/* localize time single minute */
+" minute" = " minute";
+
+/* localize time plural minute */
+" minutes" = " minutes";
+
+/* localize time single second */
+" second" = " second";
+
+/* localize time plural second */
+" seconds" = " seconds";
+
+/* display postpone label count */
+"%@ times" = "%@ times";
+
+/* (No Commment) */
+"Already postponed %@" = "Already postponed %@";
+
+/* timer fire notification title - halt */
+"Back to work" = "Back to work";
+
+/* status item tooltip - postpone */
+"Halt postponed..." = "Halt postponed...";
+
+/* fire notification content - halt */
+"Halt time is up, you can now return to work... If you want" = "Halt time is up, you can now return to work... If you want";
+
+/* status item tooltip - halt */
+"Halt!" = "Halt!";
+
+/* fire notification title - run/postpone */
+"Halt!(title)" = "Halt!";
+
+/* action button title - run/postpone */
+"Halt(buttonTitle)" = "Halt";
+
+/* (No Commment) */
+"Not working..." = "Not working...";
+
+/* action button title - run/postpone */
+"Postpone(buttonTitle)" = "Postpone";
+
+/* display postpone label */
+"Postponed %@ before halt" = "Postponed %@ before halt";
+
+/* action button title - halt */
+"Run(buttonTitle)" = "Run";
+
+/* status item tooltip - run */
+"Running!" = "Running!";
+
+/* turn off alert content */
+"The timer of Halt is now running, and has to be reset when you turn on Halt for the next time. Are you sure you want to turn off?" = "The timer of Halt is now running, and has to be reset when you turn on Halt for the next time. Are you sure you want to turn off?";
+
+/* turn off alert title */
+"Time's still ticking!" = "The clock's still ticking!";
+
+/* action button title - halt */
+"Turn off(buttonTitle)" = "Turn off";
+
+/* display until label */
+"Until end of halt:" = "Until end of halt:";
+
+/* display until label */
+"Until halt:" = "Until halt:";
+
+/* fire notification content - run/postpone */
+"You've worked continuously for %@, now it's time to halt and take a break" = "You've worked continuously for %@, now it's time to halt and take a break";
+
+/* fire notification subtitle 2 */
+"no more postpones allowed" = "no more postpones allowed";
+
+/* display postpone label count */
+"once" = "once";
+
+/* display postpone label count */
+"twice" = "twice";
+

@@ -1,0 +1,48 @@
+/* Class = "NSMenu"; title = "Services"; ObjectID = "3Xx-OX-10e"; */
+"3Xx-OX-10e.title" = "服务";
+
+/* Class = "NSMenuItem"; title = "Halt"; ObjectID = "7wk-d1-pbw"; */
+"7wk-d1-pbw.title" = "中止";
+
+/* Class = "NSMenuItem"; title = "Quit Halt"; ObjectID = "73e-1a-CVq"; */
+"73e-1a-CVq.title" = "退出 中止";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "EdS-RR-yo5"; */
+"EdS-RR-yo5.title" = "显示全部";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "Pgf-v4-3mz"; */
+"Pgf-v4-3mz.title" = "主菜单";
+
+/* Class = "NSMenuItem"; title = "Preferences..."; ObjectID = "RVP-0G-gdJ"; */
+"RVP-0G-gdJ.title" = "偏好设置...";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "SHn-bB-ofr"; */
+"SHn-bB-ofr.title" = "隐藏其他";
+
+/* Class = "NSMenuItem"; title = "Hide Halt"; ObjectID = "UMv-lN-2Od"; */
+"UMv-lN-2Od.title" = "隐藏 中止";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "UU5-lK-8X0"; */
+"UU5-lK-8X0.title" = "偏好设置…";
+
+/* Class = "NSMenuItem"; title = "Turn on"; ObjectID = "jDY-ZL-q3q"; */
+"jDY-ZL-q3q.title" = "运行";
+
+/* Class = "NSMenuItem"; title = "Quit Halt"; ObjectID = "qCH-Ea-JUO"; */
+"qCH-Ea-JUO.title" = "退出 中止";
+
+/* Class = "NSMenu"; title = "Halt"; ObjectID = "rFS-HR-eQW"; */
+"rFS-HR-eQW.title" = "中止";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "tnO-lI-hc2"; */
+"tnO-lI-hc2.title" = "服务";
+
+/* Class = "NSMenuItem"; title = "About Halt"; ObjectID = "vfm-oc-Rti"; */
+"vfm-oc-Rti.title" = "关于 中止";
+
+/* Class = "NSMenuItem"; title = "About Halt"; ObjectID = "wHs-sK-W8K"; */
+"wHs-sK-W8K.title" = "关于 中止";
+
+/* Class = "NSMenuItem"; title = "Turn off"; ObjectID = "xID-Rf-VVh"; */
+"xID-Rf-VVh.title" = "停止";
+

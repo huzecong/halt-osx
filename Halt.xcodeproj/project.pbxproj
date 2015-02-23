@@ -7,11 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F159E081A99AEF500160823 /* TimerPopoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F159E0A1A99AEF500160823 /* TimerPopoverView.xib */; };
+		3F159E131A99B90700160823 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F159E121A99B90700160823 /* Preferences.xib */; };
+		3F159E161A99BE4C00160823 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F159E151A99BE4C00160823 /* PreferenceController.m */; };
 		3F1AB5271A9714D600797296 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1AB5261A9714D600797296 /* AppDelegate.m */; };
 		3F1AB5291A9714D600797296 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1AB5281A9714D600797296 /* main.m */; };
 		3F1AB52B1A9714D600797296 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F1AB52A1A9714D600797296 /* Images.xcassets */; };
 		3F1AB52E1A9714D600797296 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1AB52C1A9714D600797296 /* MainMenu.xib */; };
 		3F1AB53A1A9714D600797296 /* HaltTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1AB5391A9714D600797296 /* HaltTests.m */; };
+		3F1AB54B1A97757900797296 /* TimerPopoverDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1AB54A1A97757900797296 /* TimerPopoverDelegate.m */; };
+		3F1AB54E1A97760000797296 /* TimerLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1AB54D1A97760000797296 /* TimerLogic.m */; };
+		3F1AB5531A981F9200797296 /* TimerPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1AB5521A981F9200797296 /* TimerPopoverViewController.m */; };
+		3F1AB5551A98200F00797296 /* TimerPopoverWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1AB5541A98200F00797296 /* TimerPopoverWindow.xib */; };
+		3F1AB55A1A98904100797296 /* TimerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1AB5591A98904100797296 /* TimerInfo.m */; };
+		3F30E04C1A99A2A200FE5397 /* RHStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F30E04B1A99A2A200FE5397 /* RHStatusItemView.m */; };
+		3F30E0511A99ACCE00FE5397 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F30E0531A99ACCE00FE5397 /* InfoPlist.strings */; };
+		3F30E0561A99ACCE00FE5397 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F30E0581A99ACCE00FE5397 /* InfoPlist.strings */; };
+		3F30E05B1A99ACCF00FE5397 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F30E05D1A99ACCF00FE5397 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F159E091A99AEF500160823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TimerPopoverView.xib; sourceTree = "<group>"; };
+		3F159E0F1A99B0F400160823 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		3F159E111A99B12500160823 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TimerPopoverView.strings"; sourceTree = "<group>"; };
+		3F159E121A99B90700160823 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		3F159E141A99BE4C00160823 /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; };
+		3F159E151A99BE4C00160823 /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceController.m; sourceTree = "<group>"; };
 		3F1AB5201A9714D600797296 /* Halt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Halt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F1AB5241A9714D600797296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F1AB5251A9714D600797296 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,6 +53,21 @@
 		3F1AB5331A9714D600797296 /* HaltTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaltTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F1AB5381A9714D600797296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F1AB5391A9714D600797296 /* HaltTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaltTests.m; sourceTree = "<group>"; };
+		3F1AB5491A97757900797296 /* TimerPopoverDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerPopoverDelegate.h; sourceTree = "<group>"; };
+		3F1AB54A1A97757900797296 /* TimerPopoverDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerPopoverDelegate.m; sourceTree = "<group>"; };
+		3F1AB54C1A97760000797296 /* TimerLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerLogic.h; sourceTree = "<group>"; };
+		3F1AB54D1A97760000797296 /* TimerLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerLogic.m; sourceTree = "<group>"; };
+		3F1AB5511A981F9200797296 /* TimerPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerPopoverViewController.h; sourceTree = "<group>"; };
+		3F1AB5521A981F9200797296 /* TimerPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerPopoverViewController.m; sourceTree = "<group>"; };
+		3F1AB5541A98200F00797296 /* TimerPopoverWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerPopoverWindow.xib; sourceTree = "<group>"; };
+		3F1AB5581A98904100797296 /* TimerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerInfo.h; sourceTree = "<group>"; };
+		3F1AB5591A98904100797296 /* TimerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerInfo.m; sourceTree = "<group>"; };
+		3F30E04A1A99A2A200FE5397 /* RHStatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHStatusItemView.h; sourceTree = "<group>"; };
+		3F30E04B1A99A2A200FE5397 /* RHStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHStatusItemView.m; sourceTree = "<group>"; };
+		3F30E0521A99ACCE00FE5397 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		3F30E0571A99ACCE00FE5397 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		3F30E05C1A99ACCF00FE5397 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3FC9A35B1A9B0A9800ABC060 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +109,15 @@
 		3F1AB5221A9714D600797296 /* Halt */ = {
 			isa = PBXGroup;
 			children = (
+				3F30E04A1A99A2A200FE5397 /* RHStatusItemView.h */,
+				3F30E04B1A99A2A200FE5397 /* RHStatusItemView.m */,
 				3F1AB5251A9714D600797296 /* AppDelegate.h */,
 				3F1AB5261A9714D600797296 /* AppDelegate.m */,
-				3F1AB52A1A9714D600797296 /* Images.xcassets */,
 				3F1AB52C1A9714D600797296 /* MainMenu.xib */,
+				3FC9A3511A9A018500ABC060 /* Preferences */,
+				3FC9A3521A9A019500ABC060 /* Popover Control */,
+				3FC9A3531A9A019E00ABC060 /* Timer */,
+				3F1AB52A1A9714D600797296 /* Images.xcassets */,
 				3F1AB5231A9714D600797296 /* Supporting Files */,
 			);
 			path = Halt;
@@ -88,6 +126,8 @@
 		3F1AB5231A9714D600797296 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3F30E05D1A99ACCF00FE5397 /* Localizable.strings */,
+				3F30E0581A99ACCE00FE5397 /* InfoPlist.strings */,
 				3F1AB5241A9714D600797296 /* Info.plist */,
 				3F1AB5281A9714D600797296 /* main.m */,
 			);
@@ -106,9 +146,44 @@
 		3F1AB5371A9714D600797296 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3F30E0531A99ACCE00FE5397 /* InfoPlist.strings */,
 				3F1AB5381A9714D600797296 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FC9A3511A9A018500ABC060 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				3F159E141A99BE4C00160823 /* PreferenceController.h */,
+				3F159E151A99BE4C00160823 /* PreferenceController.m */,
+				3F159E121A99B90700160823 /* Preferences.xib */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		3FC9A3521A9A019500ABC060 /* Popover Control */ = {
+			isa = PBXGroup;
+			children = (
+				3F1AB5511A981F9200797296 /* TimerPopoverViewController.h */,
+				3F1AB5521A981F9200797296 /* TimerPopoverViewController.m */,
+				3F159E0A1A99AEF500160823 /* TimerPopoverView.xib */,
+				3F1AB5491A97757900797296 /* TimerPopoverDelegate.h */,
+				3F1AB54A1A97757900797296 /* TimerPopoverDelegate.m */,
+				3F1AB5541A98200F00797296 /* TimerPopoverWindow.xib */,
+			);
+			name = "Popover Control";
+			sourceTree = "<group>";
+		};
+		3FC9A3531A9A019E00ABC060 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				3F1AB5581A98904100797296 /* TimerInfo.h */,
+				3F1AB5591A98904100797296 /* TimerInfo.m */,
+				3F1AB54C1A97760000797296 /* TimerLogic.h */,
+				3F1AB54D1A97760000797296 /* TimerLogic.m */,
+			);
+			name = Timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +249,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 3F1AB5171A9714D600797296;
 			productRefGroup = 3F1AB5211A9714D600797296 /* Products */;
@@ -191,8 +267,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F159E131A99B90700160823 /* Preferences.xib in Resources */,
+				3F1AB5551A98200F00797296 /* TimerPopoverWindow.xib in Resources */,
+				3F30E05B1A99ACCF00FE5397 /* Localizable.strings in Resources */,
+				3F159E081A99AEF500160823 /* TimerPopoverView.xib in Resources */,
 				3F1AB52B1A9714D600797296 /* Images.xcassets in Resources */,
 				3F1AB52E1A9714D600797296 /* MainMenu.xib in Resources */,
+				3F30E0561A99ACCE00FE5397 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F30E0511A99ACCE00FE5397 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +293,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F1AB5291A9714D600797296 /* main.m in Sources */,
+				3F1AB54B1A97757900797296 /* TimerPopoverDelegate.m in Sources */,
+				3F1AB5531A981F9200797296 /* TimerPopoverViewController.m in Sources */,
+				3F1AB55A1A98904100797296 /* TimerInfo.m in Sources */,
+				3F159E161A99BE4C00160823 /* PreferenceController.m in Sources */,
+				3F1AB54E1A97760000797296 /* TimerLogic.m in Sources */,
+				3F30E04C1A99A2A200FE5397 /* RHStatusItemView.m in Sources */,
 				3F1AB5271A9714D600797296 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,12 +322,47 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3F159E0A1A99AEF500160823 /* TimerPopoverView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F159E091A99AEF500160823 /* Base */,
+				3F159E111A99B12500160823 /* zh-Hans */,
+			);
+			name = TimerPopoverView.xib;
+			sourceTree = "<group>";
+		};
 		3F1AB52C1A9714D600797296 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3F1AB52D1A9714D600797296 /* Base */,
+				3F159E0F1A99B0F400160823 /* zh-Hans */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		3F30E0531A99ACCE00FE5397 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F30E0521A99ACCE00FE5397 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3F30E0581A99ACCE00FE5397 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F30E0571A99ACCE00FE5397 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3F30E05D1A99ACCF00FE5397 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F30E05C1A99ACCF00FE5397 /* zh-Hans */,
+				3FC9A35B1A9B0A9800ABC060 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -398,6 +521,7 @@
 				3F1AB53F1A9714D600797296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F1AB5401A9714D600797296 /* Build configuration list for PBXNativeTarget "HaltTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +530,7 @@
 				3F1AB5421A9714D600797296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

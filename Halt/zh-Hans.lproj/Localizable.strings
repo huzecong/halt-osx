@@ -1,0 +1,84 @@
+/* localize time single hour */
+" hour" = "小时";
+
+/* localize time plural hour */
+" hours" = "小时";
+
+/* localize time single minute */
+" minute" = "分";
+
+/* localize time plural minute */
+" minutes" = "分";
+
+/* localize time single second */
+" second" = "秒";
+
+/* localize time plural second */
+" seconds" = "秒";
+
+/* display postpone label count */
+"%@ times" = "%@次";
+
+/* (No Commment) */
+"Already postponed %@" = "已经推迟%@";
+
+/* timer fire notification title - halt */
+"Back to work" = "继续工作吧";
+
+/* status item tooltip - postpone */
+"Halt postponed..." = "已推迟休息...";
+
+/* fire notification content - halt */
+"Halt time is up, you can now return to work... If you want" = "休息时间结束，可以回来工作了……嘛，如果你想的话";
+
+/* status item tooltip - halt */
+"Halt!" = "中止！休息时间";
+
+/* fire notification title - run/postpone */
+"Halt!(title)" = "中止！";
+
+/* action button title - run/postpone */
+"Halt(buttonTitle)" = "休息";
+
+/* (No Commment) */
+"Not working..." = "待机中...";
+
+/* action button title - run/postpone */
+"Postpone(buttonTitle)" = "推迟";
+
+/* display postpone label */
+"Postponed %@ before halt" = "休息前已推迟%@";
+
+/* action button title - halt */
+"Run(buttonTitle)" = "工作";
+
+/* status item tooltip - run */
+"Running!" = "工作中!";
+
+/* turn off alert content */
+"The timer of Halt is now running, and has to be reset when you turn on Halt for the next time. Are you sure you want to turn off?" = "当你下次运行时，已经走过的时间必须重置。你确定要停止吗？";
+
+/* turn off alert title */
+"Time's still ticking!" = "时间不会因此停止！";
+
+/* action button title - halt */
+"Turn off(buttonTitle)" = "停止";
+
+/* display until label */
+"Until end of halt:" = "休息时间还剩:";
+
+/* display until label */
+"Until halt:" = "工作时间还剩:";
+
+/* fire notification content - run/postpone */
+"You've worked continuously for %@, now it's time to halt and take a break" = "你已经连续工作了 %@ ，该停下来休息一会儿了";
+
+/* fire notification subtitle 2 */
+"no more postpones allowed" = "不允许再推迟";
+
+/* display postpone label count */
+"once" = "一次";
+
+/* display postpone label count */
+"twice" = "两次";
+

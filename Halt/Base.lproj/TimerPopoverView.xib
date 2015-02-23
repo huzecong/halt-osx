@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TimerPopoverViewController">
+            <connections>
+                <outlet property="haltButton" destination="zdO-Ke-pUX" id="wGz-mF-sFR"/>
+                <outlet property="postponeLabel" destination="jvL-tZ-Pum" id="Omo-Aq-mec"/>
+                <outlet property="timeLabel" destination="YXN-gv-uFL" id="6bp-46-lxa"/>
+                <outlet property="untilLabel" destination="BKi-Gu-aDL" id="grn-lR-wzj"/>
+                <outlet property="view" destination="iYf-4N-SHi" id="nCt-yR-DdM"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="i3m-I9-FIR" userLabel="PopoverViewDark">
+            <rect key="frame" x="0.0" y="0.0" width="208" height="162"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fBz-xe-jtb" userLabel="TimeLabel">
+                    <rect key="frame" x="20" y="69" width="168" height="48"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" title="00:00:00" placeholderString="01:23:45" drawsBackground="YES" id="69d-ax-TmQ">
+                        <font key="font" size="40" name="HelveticaNeue"/>
+                        <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zoZ-5f-ln9">
+                    <rect key="frame" x="18" y="125" width="172" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Until halt:" id="kWY-se-06q">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Oq-EX-4yO">
+                    <rect key="frame" x="18" y="44" width="172" height="17"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Already postponed 3 times" id="tAI-qd-sKE">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="b4p-RE-LBs">
+                    <rect key="frame" x="69" y="17" width="70" height="19"/>
+                    <buttonCell key="cell" type="recessed" title="Halt Now" bezelStyle="recessed" alignment="center" borderStyle="border" inset="2" id="EqU-1F-lcn">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                        <font key="font" metaFont="systemBold" size="12"/>
+                    </buttonCell>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="5Oq-EX-4yO" firstAttribute="top" secondItem="fBz-xe-jtb" secondAttribute="bottom" constant="8" id="2b4-bY-38o"/>
+                <constraint firstItem="b4p-RE-LBs" firstAttribute="top" secondItem="5Oq-EX-4yO" secondAttribute="bottom" constant="8" id="7F9-FF-SrY"/>
+                <constraint firstItem="zoZ-5f-ln9" firstAttribute="leading" secondItem="i3m-I9-FIR" secondAttribute="leading" constant="20" id="B3A-xu-XT2"/>
+                <constraint firstItem="fBz-xe-jtb" firstAttribute="top" secondItem="zoZ-5f-ln9" secondAttribute="bottom" constant="8" id="HOa-GE-Etx"/>
+                <constraint firstAttribute="trailing" secondItem="zoZ-5f-ln9" secondAttribute="trailing" constant="20" id="JXI-g3-RjR"/>
+                <constraint firstItem="zoZ-5f-ln9" firstAttribute="top" secondItem="i3m-I9-FIR" secondAttribute="top" constant="20" id="Y4a-YS-clA"/>
+                <constraint firstItem="5Oq-EX-4yO" firstAttribute="leading" secondItem="i3m-I9-FIR" secondAttribute="leading" constant="20" id="ZYd-Ol-bLD"/>
+                <constraint firstItem="fBz-xe-jtb" firstAttribute="top" secondItem="zoZ-5f-ln9" secondAttribute="bottom" constant="8" id="cqI-cR-1zg"/>
+                <constraint firstAttribute="centerX" secondItem="b4p-RE-LBs" secondAttribute="centerX" id="jXQ-ac-eBn"/>
+                <constraint firstAttribute="bottom" secondItem="b4p-RE-LBs" secondAttribute="bottom" constant="18" id="kLj-ZK-QZY"/>
+                <constraint firstItem="5Oq-EX-4yO" firstAttribute="top" secondItem="fBz-xe-jtb" secondAttribute="bottom" constant="8" id="kjy-7o-0hv"/>
+                <constraint firstItem="fBz-xe-jtb" firstAttribute="leading" secondItem="i3m-I9-FIR" secondAttribute="leading" constant="20" id="mDR-Zf-KZB"/>
+                <constraint firstAttribute="trailing" secondItem="fBz-xe-jtb" secondAttribute="trailing" constant="20" id="mxL-cK-rNG"/>
+                <constraint firstAttribute="trailing" secondItem="5Oq-EX-4yO" secondAttribute="trailing" constant="20" id="pBL-sz-SHA"/>
+            </constraints>
+            <point key="canvasLocation" x="522" y="763.5"/>
+        </customView>
+        <customView id="iYf-4N-SHi" userLabel="PopoverView">
+            <rect key="frame" x="0.0" y="0.0" width="208" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YXN-gv-uFL" userLabel="TimeLabel">
+                    <rect key="frame" x="18" y="72" width="172" height="48"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" title="00:00:00" placeholderString="01:23:45" id="dFh-lZ-bqV">
+                        <font key="font" size="40" name="HelveticaNeue"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BKi-Gu-aDL">
+                    <rect key="frame" x="18" y="128" width="172" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Until halt:" id="5WK-xe-Uly">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jvL-tZ-Pum">
+                    <rect key="frame" x="18" y="47" width="172" height="17"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Already postponed 3 times" id="eX8-oJ-fXs">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zdO-Ke-pUX">
+                    <rect key="frame" x="56" y="11" width="97" height="32"/>
+                    <buttonCell key="cell" type="push" title="Halt Now" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="Mde-rR-vjl">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="mouseDown:" target="-2" id="txK-Ha-3aS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YXN-gv-uFL" secondAttribute="trailing" constant="20" id="2ui-IG-rBV"/>
+                <constraint firstItem="YXN-gv-uFL" firstAttribute="top" secondItem="BKi-Gu-aDL" secondAttribute="bottom" constant="8" id="4Cs-HJ-Bbm"/>
+                <constraint firstItem="BKi-Gu-aDL" firstAttribute="top" secondItem="iYf-4N-SHi" secondAttribute="top" constant="20" id="CzS-i1-y6V"/>
+                <constraint firstAttribute="trailing" secondItem="jvL-tZ-Pum" secondAttribute="trailing" constant="20" id="D7Q-Sx-mkm"/>
+                <constraint firstAttribute="trailing" secondItem="BKi-Gu-aDL" secondAttribute="trailing" constant="20" id="HmH-U2-17D"/>
+                <constraint firstAttribute="centerX" secondItem="zdO-Ke-pUX" secondAttribute="centerX" id="Jyw-om-P1Q"/>
+                <constraint firstAttribute="bottom" secondItem="zdO-Ke-pUX" secondAttribute="bottom" constant="18" id="Khw-6V-JAH"/>
+                <constraint firstItem="BKi-Gu-aDL" firstAttribute="leading" secondItem="iYf-4N-SHi" secondAttribute="leading" constant="20" id="NHR-ll-CcH"/>
+                <constraint firstItem="jvL-tZ-Pum" firstAttribute="top" secondItem="YXN-gv-uFL" secondAttribute="bottom" constant="8" id="UAD-bc-pyk"/>
+                <constraint firstItem="jvL-tZ-Pum" firstAttribute="leading" secondItem="iYf-4N-SHi" secondAttribute="leading" constant="20" id="X52-eL-GvE"/>
+                <constraint firstItem="YXN-gv-uFL" firstAttribute="top" secondItem="BKi-Gu-aDL" secondAttribute="bottom" constant="8" id="cBN-lW-bhQ"/>
+                <constraint firstItem="zdO-Ke-pUX" firstAttribute="top" secondItem="jvL-tZ-Pum" secondAttribute="bottom" constant="8" id="f27-mz-qBd"/>
+                <constraint firstItem="YXN-gv-uFL" firstAttribute="leading" secondItem="iYf-4N-SHi" secondAttribute="leading" constant="20" id="ojS-KC-aDS"/>
+                <constraint firstItem="jvL-tZ-Pum" firstAttribute="top" secondItem="YXN-gv-uFL" secondAttribute="bottom" constant="8" id="xCd-lj-Hw2"/>
+            </constraints>
+            <point key="canvasLocation" x="809" y="764.5"/>
+        </customView>
+    </objects>
+</document>

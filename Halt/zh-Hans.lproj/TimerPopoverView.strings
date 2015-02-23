@@ -1,0 +1,30 @@
+/* Class = "NSTextFieldCell"; title = "Until halt:"; ObjectID = "5WK-xe-Uly"; */
+"5WK-xe-Uly.title" = "工作时间还剩:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "01:23:45"; ObjectID = "69d-ax-TmQ"; */
+"69d-ax-TmQ.placeholderString" = "01:23:45";
+
+/* Class = "NSTextFieldCell"; title = "00:00:00"; ObjectID = "69d-ax-TmQ"; */
+"69d-ax-TmQ.title" = "00:00:00";
+
+/* Class = "NSButtonCell"; title = "Halt Now"; ObjectID = "EqU-1F-lcn"; */
+"EqU-1F-lcn.title" = "中止!";
+
+/* Class = "NSButtonCell"; title = "Halt Now"; ObjectID = "Mde-rR-vjl"; */
+"Mde-rR-vjl.title" = "中止!";
+
+/* Class = "NSTextFieldCell"; placeholderString = "01:23:45"; ObjectID = "dFh-lZ-bqV"; */
+"dFh-lZ-bqV.placeholderString" = "01:23:45";
+
+/* Class = "NSTextFieldCell"; title = "00:00:00"; ObjectID = "dFh-lZ-bqV"; */
+"dFh-lZ-bqV.title" = "00:00:00";
+
+/* Class = "NSTextFieldCell"; title = "Already postponed 3 times"; ObjectID = "eX8-oJ-fXs"; */
+"eX8-oJ-fXs.title" = "已经推迟三次";
+
+/* Class = "NSTextFieldCell"; title = "Until halt:"; ObjectID = "kWY-se-06q"; */
+"kWY-se-06q.title" = "工作时间还剩:";
+
+/* Class = "NSTextFieldCell"; title = "Already postponed 3 times"; ObjectID = "tAI-qd-sKE"; */
+"tAI-qd-sKE.title" = "已经推迟三次";
+
