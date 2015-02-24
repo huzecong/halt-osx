@@ -32,11 +32,7 @@
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="m53-LW-Hcq"/>
-                <menuItem title="Preferences..." enabled="NO" keyEquivalent="," id="RVP-0G-gdJ">
-                    <connections>
-                        <action selector="openPreferences:" target="-1" id="mXH-ql-KMQ"/>
-                    </connections>
-                </menuItem>
+                <menuItem title="Preferences..." enabled="NO" keyEquivalent="," id="RVP-0G-gdJ"/>
                 <menuItem isSeparatorItem="YES" id="dGM-ut-32p"/>
                 <menuItem title="About Halt" id="wHs-sK-W8K">
                     <modifierMask key="keyEquivalentModifierMask"/>

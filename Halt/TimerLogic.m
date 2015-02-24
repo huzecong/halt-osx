@@ -66,11 +66,7 @@
 - (void)resumeTimer {
 	if (self.status == TimerPaused) {
 		NSTimeInterval time = self.timeInterval - self.timeElapsed;
-		self.timer = [NSTimer scheduledTimerWithTimeInterval:time
-													  target:self
-													selector:@selector(timerFired:)
-													userInfo:[self timerUserInfo]
-													 repeats:NO];
+		self.timer = [NSTimer scheduledTimerWithTimeInterval:time target:self selector:@selector(timerFired:) userInfo:[self timerUserInfo] repeats:NO];
 		self.status = TimerRunning;
 	}
 }

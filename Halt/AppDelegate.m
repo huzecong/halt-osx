@@ -93,9 +93,9 @@
 			[menu insertItem:turnOnMenuItem atIndex:0];
 		} else if (status == InfoHalting) {
 			blockWindow.alphaValue = 0.5;
+			[NSApp activateIgnoringOtherApps:YES];
 			[blockWindow makeKeyAndOrderFront:self];
 			alwaysFrontmost = YES;
-			[NSApp activateIgnoringOtherApps:YES];
 		}
 		if (oldStatus == InfoOff) {
 			[menu removeItem:turnOnMenuItem];
@@ -129,6 +129,7 @@
 
 - (void)mouseClick:(id)sender {
 	[popoverDelegate showPopover:sender timerInfo:timerInfo];
+	[NSApp activateIgnoringOtherApps:YES];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -220,7 +221,7 @@
 						   for (NSUserNotification *nox in [[NSUserNotificationCenter defaultUserNotificationCenter] deliveredNotifications]) {
 							   if ([nox.identifier isEqualToString:notification.identifier]) notificationStillPresent = YES;
 						   }
-						   if (!notificationStillPresent) [NSThread sleepForTimeInterval:0.20f];
+						   if (notificationStillPresent) [NSThread sleepForTimeInterval:0.20f];
 					   } while (notificationStillPresent);
 					   dispatch_async(dispatch_get_main_queue(), ^{
 //						   NSLog(@"deliver %@ %ld", notification.identifier, notification.activationType);
