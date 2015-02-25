@@ -137,6 +137,21 @@
 	[[NSUserNotificationCenter defaultUserNotificationCenter] removeAllDeliveredNotifications];
 }
 
+- (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender {
+	NSAlert *alert = [[NSAlert alloc] init];
+	alert.messageText = NSLocalizedString(@"Time's still ticking!", @"turn off alert title");
+	alert.informativeText = NSLocalizedString(@"The timer of Halt is now running, and has to be reset when you turn on Halt for the next time. Are you sure you want to quit?", @"quit alert content");
+	[alert setAlertStyle:NSWarningAlertStyle];
+	[alert addButtonWithTitle:@"No"];
+	[alert addButtonWithTitle:@"Yes"];
+	NSModalResponse response = [alert runModal];
+	if (response == NSAlertSecondButtonReturn) {
+		return NSTerminateNow;
+	} else {
+		return NSTerminateCancel;
+	}
+}
+
 #pragma mark - Timer Fired
 
 - (void)timerFired:(NSTimer *)timer {

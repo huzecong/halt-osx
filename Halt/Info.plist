@@ -34,5 +34,7 @@
 	<string>NSApplication</string>
 	<key>NSUserNotificationAlertStyle</key>
 	<string>alert</string>
+	<key>LSUIElement</key>
+	<true/>
 </dict>
 </plist>

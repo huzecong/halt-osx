@@ -61,6 +61,9 @@
 /* turn off alert title */
 "Time's still ticking!" = "时间不会因此停止！";
 
+/* quit alert content */
+"The timer of Halt is now running, and has to be reset when you turn on Halt for the next time. Are you sure you want to quit?" = "当你下次运行时，已经走过的时间必须重置。你确定要退出吗？";
+
 /* action button title - halt */
 "Turn off(buttonTitle)" = "停止";
 
