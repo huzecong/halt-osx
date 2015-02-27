@@ -1,3 +1,9 @@
+/* yes button */
+"Yes" = "Yes";
+
+/* no button */
+"No" = "No";
+
 /* localize time single hour */
 " hour" = " hour";
 

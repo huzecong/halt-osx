@@ -1,3 +1,9 @@
+/* yes button */
+"Yes" = "是";
+
+/* no button */
+"No" = "否";
+
 /* localize time single hour */
 " hour" = "小时";
 

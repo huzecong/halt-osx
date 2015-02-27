@@ -48,7 +48,7 @@
 		@{@"runTime": @3600.0,
 		  @"postponeTime": @600.0,
 		  @"haltTime": @300.0,
-		  @"postponeLimit": @10}];
+		  @"postponeLimit": @4}];
 #endif
 	// Initialize status item right-click menu
 	turnOffMenuItem = [[menu itemArray] objectAtIndex:0];
@@ -142,8 +142,8 @@
 	alert.messageText = NSLocalizedString(@"Time's still ticking!", @"turn off alert title");
 	alert.informativeText = NSLocalizedString(@"The timer of Halt is now running, and has to be reset when you turn on Halt for the next time. Are you sure you want to quit?", @"quit alert content");
 	[alert setAlertStyle:NSWarningAlertStyle];
-	[alert addButtonWithTitle:@"No"];
-	[alert addButtonWithTitle:@"Yes"];
+	[alert addButtonWithTitle:NSLocalizedString(@"No", @"no button")];
+	[alert addButtonWithTitle:NSLocalizedString(@"Yes", @"yes button")];
 	NSModalResponse response = [alert runModal];
 	if (response == NSAlertSecondButtonReturn) {
 		return NSTerminateNow;
@@ -260,8 +260,8 @@
 	alert.messageText = NSLocalizedString(@"Time's still ticking!", @"turn off alert title");
 	alert.informativeText = NSLocalizedString(@"The timer of Halt is now running, and has to be reset when you turn on Halt for the next time. Are you sure you want to turn off?", @"turn off alert content");
 	[alert setAlertStyle:NSWarningAlertStyle];
-	[alert addButtonWithTitle:@"No"];
-	[alert addButtonWithTitle:@"Yes"];
+	[alert addButtonWithTitle:NSLocalizedString(@"No", @"no button")];
+	[alert addButtonWithTitle:NSLocalizedString(@"Yes", @"yes button")];
 	NSModalResponse response = [alert runModal];
 	if (response == NSAlertSecondButtonReturn) {
 		[timerInfo off];
