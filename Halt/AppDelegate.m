@@ -200,6 +200,9 @@
 - (void)handleNotification:(NSUserNotification *)notification {
 	static NSString *lastIdentifier = @"";
 	if ([notification.identifier isEqualTo:lastIdentifier]) return ;
+	// Prevent turning to halt after pressing "Turn off" when halt notification
+	// is displayed and then automatically dismissed
+	if (timerInfo.status == InfoOff) return ;
 	lastIdentifier = [notification.identifier copy];
 	NSString *type = notification.userInfo[@"Type"];
 	NSUserNotificationActivationType activationType = notification.activationType;
