@@ -138,6 +138,9 @@
 }
 
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender {
+	if (timerInfo.status == InfoOff) {
+		return NSTerminateNow;
+	}
 	NSAlert *alert = [[NSAlert alloc] init];
 	alert.messageText = NSLocalizedString(@"Time's still ticking!", @"turn off alert title");
 	alert.informativeText = NSLocalizedString(@"The timer of Halt is now running, and has to be reset when you turn on Halt for the next time. Are you sure you want to quit?", @"quit alert content");
